@@ -1,11 +1,18 @@
 const par3 = document.querySelector('section#a p.p3');
 const par2 = document.querySelector('section#a p.p2');
 
-function ubahWarna() {
+function ubahWarnaIn() {
     par2.style.backgroundColor = 'red';
+
 }
 
-par2.addEventListener('click', ubahWarna);
+function ubahWarnaOut() {
+
+    par2.style.backgroundColor = 'blue';
+}
+
+par2.addEventListener('mouseenter', ubahWarnaIn);
+par2.addEventListener('mouseleave', ubahWarnaOut);
 
 
 
